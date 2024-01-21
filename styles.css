@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  font-family: monospace;
+  gap: 14px;
+}
+
+.ball_area {
+  width: 340px;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+.subtitle {
+  font-style: italic;
+}
+
+input {
+  width: 200px;
+  height: 20px;
+  text-align: center;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.ball {
+  display: block;
+  background: black;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+}
+
+.answer_area {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  margin: 60px;
+  background-color: #ffffff;
+  display: flex;
+  justify-contnet: center;
+  align-items: center;
+}
+
+.answer {
+  font-weight: bold;
+  color: #2E5077;
+}
+
+.btns {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btnAnswer {
+  width: 140px;
+  height: 24px;
+  border: none;
+  border-radius: 6px;
+}
+
+.btnReset {
+  width: 100px;
+  height: 24px;
+  border: none;
+  border-radius: 6px;
+}
+
+.btnAnswer:hover, .btnReset:hover {
+  cursor: pointer;
+  background-color: #2E5077;
+  color: white;
+  box-shadow: 2px 2px 4px black;
+}
+
+.btnAnswer:active, .btnReset:active {
+  transform: scale(.9);
+  box-shadow: none;
+}
